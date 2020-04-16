@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: xh-eureka
+#  boot:
+#    admin:
+#      context-path:  /admin
+server:
+  port: 10501
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false #通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

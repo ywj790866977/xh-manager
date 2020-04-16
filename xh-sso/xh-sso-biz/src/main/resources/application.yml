@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: xh-sso
+server:
+  port: 10100
+  servlet:
+    context-path: /uac
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10501/eureka/

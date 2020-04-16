@@ -1,0 +1,46 @@
+server:
+  port: 10601
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    health:
+#      show-details: always
+#logging:
+#  file: xh-admin.log #添加开启admin的日志监控
+
+spring:
+  application:
+    name: xh-admin
+#  cloud:
+#    consul: #Consul服务注册发现配置
+#      host: 45.76.199.109
+#      port: 8500
+#      discovery:
+#        service-name: ${spring.application.name}
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://45.76.218.204:3306/xh?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: niunan789
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      auto-commit: true
+      connection-test-query: SELECT 1
+      connection-timeout: 30000
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      maximum-pool-size: 20
+      minimum-idle: 5
+      pool-name: HikariCP
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10501/eureka/
