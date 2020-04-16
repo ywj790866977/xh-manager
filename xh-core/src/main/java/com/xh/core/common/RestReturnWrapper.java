@@ -1,5 +1,6 @@
 package com.xh.core.common;
 
+import com.alibaba.fastjson.JSON;
 import com.xh.core.response.ResponseHelper;
 import com.xh.core.response.ResponseVO;
 import org.springframework.core.MethodParameter;
@@ -51,44 +52,23 @@ public class RestReturnWrapper implements ResponseBodyAdvice<Object> {
 			ServerHttpRequest serverHttpRequest,
 			ServerHttpResponse serverHttpResponse) {
 		//具体返回值处理
-		//情况1 如果返回的body为null
+		//如果返回的body为null
 		if (body == null) {
-			if (mediaType == MediaType.APPLICATION_JSON) {
-				//返回是json个格式类型，无body内容
-				return ResponseHelper.success();
-			} else {
-				return null;
-			}
-		} else {
-			//情况2 文件上传下载，不需要改动，直接返回
-			if (body instanceof Resource) {
-				return body;
-			} else if (body instanceof String) {
-				// 返回的是 String，
-				try {
-//                    if (restReturn.isRestReturnJson((String) body)) {
-					// 情况3 已经是RestReturn格式的json 字符串不做统一格式封装
-//                        return body;
-//                    } else {
-					//情况4 普通的返回，需要统一格式，把数据赋值回去即可。
-					return ResponseHelper.success(body);
-//                    }
-				} catch (Exception e) {
-					// 因为 API返回值为String，理论上不会走到这个分支。
-					return ResponseHelper.execption(10000, e.getMessage(), body);
-				}
-			} else {
-				//返回的是非字符串格式，实际上很多时候用都是是在应用程返回的对象居多
-				if (body instanceof ResponseVO) {
-					//情况5 如果已经封装成RestReturn,直接return
-					return body;
-				} else {
-					//情况6 非字符串非统一格式的返回，需要统一格式
-					//需要判定是否是抛出的异常返回（统一到错误输出）
-
-					return ResponseHelper.success(body);
-				}
-			}
+			return ResponseHelper.success();
 		}
+		// 文件上传下载，不需要改动，直接返回
+		if (body instanceof Resource) {
+			return body;
+		}
+		// 是字符串转为json
+		if (body instanceof String) {
+			return ResponseHelper.success(body);
+		}
+		// 如果已经封装成RestReturn,直接return
+		if (body instanceof ResponseVO) {
+			return body;
+		}
+		// 非字符串非统一格式的返回，需要统一格式
+		return ResponseHelper.success(body);
 	}
 }

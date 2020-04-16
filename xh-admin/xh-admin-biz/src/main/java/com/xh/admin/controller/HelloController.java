@@ -31,8 +31,8 @@ public class HelloController {
      */
     @ApiOperation(value = "hello",notes = "测试用例")
     @GetMapping("/v1/hello")
-    public void getHello(HttpServletRequest req, HttpServletResponse resp)
-            throws IOException {
-            resp.getWriter().write("Hello World!");
+    public String getHello(HttpServletRequest req, HttpServletResponse resp) {
+            return new String("123");
+
     }
 }
