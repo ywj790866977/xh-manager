@@ -20,6 +20,20 @@ public class AccountServiceImpl implements AccountService {
 	@Override
 	public List<Account> queryList() {
 		return accountMapper.selectList(null);
+	}
 
+	@Override
+	public Account get(Long id) {
+		return accountMapper.selectById(id);
+	}
+
+	@Override
+	public void update(Account account) {
+		accountMapper.update(account,null);
+	}
+
+	@Override
+	public void delete(Long id) {
+		accountMapper.deleteById(id);
 	}
 }

@@ -1,12 +1,14 @@
 package com.xh.admin.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * 账目表
@@ -17,6 +19,8 @@ import lombok.Data;
 @ApiModel(value = "Account对象", description="账目表")
 public class Account implements Serializable {
 	private static final long serialVersionUID = 1L;
+	@ApiModelProperty(value = "id")
+	private Long id;
 	@ApiModelProperty(value = "序号")
 	private Long billNo;
 	@ApiModelProperty(value = "摘要")
@@ -40,8 +44,10 @@ public class Account implements Serializable {
 	@ApiModelProperty(value = "删除: 0 否, 1 是")
 	private Integer deleted;
 	@ApiModelProperty(value = "创建时间")
-	private Date createdBy;
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
+	private LocalDateTime createdBy;
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone="GMT+8")
 	@ApiModelProperty(value = "更新时间")
-	private Date updatedBy;
+	private LocalDateTime updatedBy;
 
 }
