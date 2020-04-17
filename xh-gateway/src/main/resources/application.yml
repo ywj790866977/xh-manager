@@ -1,15 +1,13 @@
 server:
-  port: 10505
+  port: 10002
 spring:
   application:
     name: xh-gateway
   cloud:
-#    consul: #Consul服务注册发现配置
-#      host: 45.76.199.109
-#      port: 8500
-#      discovery:
-#        service-name: ${spring.application.name}
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: xh-admin # 路由id
           uri: lb://xh-admin
@@ -17,25 +15,36 @@ spring:
             - Path=/api/admin/**
           filters:
             - StripPrefix=2
-      discovery:
-        locator:
-          enabled: true
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:10501/eureka/
+      defaultZone: http://localhost:10001/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
 
-oauth2-server-url: http://localhost:10100/uac
-security:
-  oauth2: #与oauth2-server对应的配置
-    client:
-      client-id: admin
-      client-secret: 123456
-      user-authorization-uri: ${oauth2-server-url}/oauth/authorize
-      access-token-uri: ${oauth2-server-url}/oauth/token
-    resource:
-      jwt:
-        key-uri: ${oauth2-server-url}/oauth/token_key
-logging:
-  level:
-   - debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+
+#oauth2-server-url: http://localhost:10100/uac
+#security:
+#  oauth2: #与oauth2-server对应的配置
+#    client:
+#      client-id: admin
+#      client-secret: 123456
+#      user-authorization-uri: ${oauth2-server-url}/oauth/authorize
+#      access-token-uri: ${oauth2-server-url}/oauth/token
+#    resource:
+#      jwt:
+#        key-uri: ${oauth2-server-url}/oauth/token_key
+#logging:
+#  level:
+#   - debug

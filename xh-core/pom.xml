@@ -36,10 +36,10 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-redis</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.boot</groupId>-->
+<!--      <artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--    </dependency>-->
 
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>
@@ -47,19 +47,19 @@
       <version>${mybatis.version}</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.springframework.kafka</groupId>
-      <artifactId>spring-kafka</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.springframework.kafka</groupId>-->
+<!--      <artifactId>spring-kafka</artifactId>-->
+<!--    </dependency>-->
 
-    <dependency>
-      <groupId>org.elasticsearch</groupId>
-      <artifactId>elasticsearch</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.elasticsearch.client</groupId>
-      <artifactId>elasticsearch-rest-high-level-client</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.elasticsearch</groupId>-->
+<!--      <artifactId>elasticsearch</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>org.elasticsearch.client</groupId>-->
+<!--      <artifactId>elasticsearch-rest-high-level-client</artifactId>-->
+<!--    </dependency>-->
 
     <dependency>
       <groupId>org.apache.commons</groupId>

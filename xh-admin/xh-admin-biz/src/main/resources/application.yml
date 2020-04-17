@@ -1,5 +1,5 @@
 server:
-  port: 10601
+  port: 10101
 #management:
 #  endpoints:
 #    web:
@@ -43,4 +43,16 @@ mybatis-plus:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:10501/eureka/
+      defaultZone: http://localhost:10001/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
