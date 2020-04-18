@@ -2,51 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="220d11dc-8399-41c5-b279-dcb26ea926a7" name="Default Changelist" comment="添加空目录">
-      <change afterPath="$PROJECT_DIR$/xh-eureka/src/main/resources/logbak-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-gateway/src/main/java/com/xh/gateway/config/SwaggerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-gateway/src/main/java/com/xh/gateway/config/SwaggerProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-gateway/src/main/resources/logbak-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-monitor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-monitor/src/main/java/com/xh/monitor/MonitorApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-monitor/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-monitor/src/main/resources/logbak-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-monitor/xh-monitor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-api/xh-service-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/logbak-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/template/controller.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/template/entity.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/template/service.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/test/java/java/com/gl/demo/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/xh-service-biz.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-service/xh-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xh-sso/xh-sso-biz/src/main/resources/logbak-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-api/src/main/java/com/xh/service/entity/EduTeacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/java/com/xh/service/ServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/java/com/xh/service/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/java/com/xh/service/controller/EduTeacherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/java/com/xh/service/mapper/EduTeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/java/com/xh/service/service/EduTeacherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/java/com/xh/service/service/impl/EduTeacherServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/mapper/EduTeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xh-sso/xh-sso-biz/src/main/java/com/xh/sso/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-api/xh-admin-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-api/xh-admin-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/AdminApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/xh-admin-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/xh-admin-biz.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/common/RestReturnWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/common/RestReturnWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/component/es/EsClientSpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/component/es/EsClientSpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/component/kafka/KafkaTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/component/kafka/KafkaTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/component/redis/RedisTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/component/redis/RedisTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-core/xh-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-core/xh-core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-eureka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-eureka/xh-eureka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-eureka/xh-eureka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/admin/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/admin/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/admin/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/admin/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/admin/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/java/com/xh/admin/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/template/addVo.java.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/template/controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/template/controller.java.vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/template/listVo.java.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/template/pageVo.java.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/main/resources/template/updateVo.java.vm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/test/java/java/com/gl/demo/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-admin/xh-admin-biz/src/test/java/com/xh/demo/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/response/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-core/src/main/java/com/xh/core/response/Page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xh-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-gateway/xh-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-gateway/xh-gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-sso/xh-sso-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-sso/xh-sso-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-sso/xh-sso-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-sso/xh-sso-biz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xh-sso/xh-sso-biz/xh-sso-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-sso/xh-sso-biz/xh-sso-biz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-service/xh-service-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-service/xh-service-biz/src/test/java/java/com/gl/demo/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/src/test/java/com/xh/demo/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xh-service/xh-service-biz/xh-service-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xh-service/xh-service-biz/xh-service-biz.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +38,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -119,15 +101,19 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\code\xh\xh-manager\xh-gateway\src\main\java\com\xh\gateway\config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\code\xh\xh-manager\xh-eureka\src\main\resources" />
       <recent name="D:\code\xh\xh-manager\xh-gateway\src\main\resources" />
       <recent name="D:\code\xh\xh-manager\xh-sso\xh-sso-biz\src\main\resources" />
       <recent name="D:\code\xh\xh-manager\xh-service\xh-service-biz\src\test" />
       <recent name="D:\code\xh\xh-manager\xh-service\xh-service-biz\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xh.service.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\xh\xh-manager\xh-service\xh-service-biz\src\main\resources\mapper" />
+      <recent name="D:\code\xh\xh-manager\xh-gateway\src\main\java\com\xh\gateway\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -138,22 +124,35 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AdminApplication">
-    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="xh-admin-biz" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xh.AdminApplication" />
+    <configuration name="CodeGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xh.demo.CodeGenerator" />
+      <module name="xh-service-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xh.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="xh-eureka" />
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.com.gl.demo.CodeGenerator" />
+      <module name="xh-service-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xh.eureka.*" />
+          <option name="PATTERN" value="java.com.gl.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xh.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xh-admin-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xh.AdminApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,11 +183,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="xh-service-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xh.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xh.service.ServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ServiceApplication" />
         <item itemvalue="Spring Boot.MonitorApplication" />
+        <item itemvalue="Application.CodeGenerator (1)" />
+        <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +242,9 @@
       <workItem from="1586783347767" duration="1680000" />
       <workItem from="1587010671298" duration="10394000" />
       <workItem from="1587092996990" duration="19564000" />
+      <workItem from="1587120705535" duration="14000" />
+      <workItem from="1587176936563" duration="19000" />
+      <workItem from="1587180952371" duration="12074000" />
     </task>
     <task id="LOCAL-00001" summary="删除空目录">
       <created>1587010731713</created>
@@ -247,22 +264,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="删除空目录" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Project_Structure" timestamp="1587096027315">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1587195966849">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587096027315" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1587014662966">
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1587195966849" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1587197031934">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587014662966" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587197031934" />
     <state x="348" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587016417606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="348" y="339" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1587016417606" />
-    <state x="469" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587018126700">
+    <state x="469" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587180984453">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="469" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587018126700" />
+    <state x="469" y="161" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587180984453" />
     <state x="469" y="161" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1587018298791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -275,38 +292,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="522" y="102" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587115446700" />
-    <state width="1031" height="244" key="GridCell.Tab.0.bottom" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.0.bottom" timestamp="1587205175745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
-    <state width="1031" height="244" key="GridCell.Tab.0.center" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587205175745" />
+    <state width="1149" height="205" key="GridCell.Tab.0.center" timestamp="1587205175745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
-    <state width="1031" height="244" key="GridCell.Tab.0.left" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587205175745" />
+    <state width="1149" height="205" key="GridCell.Tab.0.left" timestamp="1587205175744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
-    <state width="1031" height="244" key="GridCell.Tab.0.right" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587205175744" />
+    <state width="1149" height="205" key="GridCell.Tab.0.right" timestamp="1587205175745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
-    <state width="1031" height="244" key="GridCell.Tab.1.bottom" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587205175745" />
+    <state width="1149" height="205" key="GridCell.Tab.1.bottom" timestamp="1587205175746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
-    <state width="1031" height="244" key="GridCell.Tab.1.center" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587205175746" />
+    <state width="1149" height="205" key="GridCell.Tab.1.center" timestamp="1587205175745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
-    <state width="1031" height="244" key="GridCell.Tab.1.left" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587205175745" />
+    <state width="1149" height="205" key="GridCell.Tab.1.left" timestamp="1587205175745">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
-    <state width="1031" height="244" key="GridCell.Tab.1.right" timestamp="1587120608708">
+    <state width="1149" height="205" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587205175745" />
+    <state width="1149" height="205" key="GridCell.Tab.1.right" timestamp="1587205175746">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1031" height="244" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587120608708" />
+    <state width="1149" height="205" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587205175746" />
     <state width="1031" height="224" key="GridCell.Tab.2.bottom" timestamp="1587021547815">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -337,6 +354,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="329" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587010734460" />
+    <state x="445" y="249" key="com.intellij.ide.util.TipDialog" timestamp="1587176937361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="445" y="249" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587176937361" />
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587093012040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

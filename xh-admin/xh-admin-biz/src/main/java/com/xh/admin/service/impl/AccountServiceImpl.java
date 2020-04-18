@@ -1,5 +1,6 @@
 package com.xh.admin.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.xh.admin.entity.Account;
 import com.xh.admin.mapper.AccountMapper;
 import com.xh.admin.service.AccountService;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
  * @author Lenovo
  */
 @Service
-public class AccountServiceImpl implements AccountService {
+public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> implements AccountService {
 
 	@Resource
 	private AccountMapper accountMapper;

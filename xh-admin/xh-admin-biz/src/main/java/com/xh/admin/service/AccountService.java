@@ -1,5 +1,6 @@
 package com.xh.admin.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.xh.admin.entity.Account;
 import java.util.List;
 
@@ -7,7 +8,7 @@ import java.util.List;
  * AccountService
  * @author rubyle
  */
-public interface AccountService {
+public interface AccountService extends IService<Account> {
 
 	/**
 	 * 查询所有

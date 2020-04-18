@@ -15,6 +15,12 @@ spring:
             - Path=/api/admin/**
           filters:
             - StripPrefix=2
+        - id: xh-service # 路由id
+          uri: lb://xh-service
+          predicates:
+            - Path=/api/service/**
+          filters:
+            - StripPrefix=2
 
 eureka:
   client:

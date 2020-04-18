@@ -1,4 +1,4 @@
-package java.com.gl.demo;
+package com.xh.demo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;

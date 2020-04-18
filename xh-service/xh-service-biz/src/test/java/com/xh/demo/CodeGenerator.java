@@ -1,4 +1,4 @@
-package java.com.gl.demo;
+package com.xh.demo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
@@ -16,7 +16,7 @@ import org.apache.commons.lang3.StringUtils;
 
 // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
 public class CodeGenerator {
-	private static final String path = "D:\\code\\gl\\gl-service\\service-edu" ;
+	private static final String path = "D:\\code\\xh\\xh-manager\\xh-service\\xh-service-biz" ;
 	/**
 	 * <p>
 	 * 读取控制台内容
@@ -55,7 +55,7 @@ public class CodeGenerator {
 		// 3.数据源配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setUrl(
-				"jdbc:mysql://45.76.218.204:3306/xh?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai");
+				"jdbc:mysql://45.76.218.204:3306/gl?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai");
 		// dsc.setSchemaName("public");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
 		dsc.setUsername("root");
@@ -65,7 +65,7 @@ public class CodeGenerator {
 		// 4.包配置
 		PackageConfig pc = new PackageConfig();
 		// com.gl.service
-		pc.setParent("com.gl");
+		pc.setParent("com.xh");
 		pc.setModuleName("service");
 		pc.setEntity("entity");
 		pc.setController("controller");
@@ -84,41 +84,6 @@ public class CodeGenerator {
 
 		// 自定义输出配置
 		List<FileOutConfig> focList = new ArrayList<>();
-		focList.add(new FileOutConfig("/template/addVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "Add" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
-		//添加update 请求对象
-		focList.add(new FileOutConfig("/template/updateVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "Update" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
-		//添加list请求对象
-		focList.add(new FileOutConfig("/template/listVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "List" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
-		//添加分页请求对象
-		focList.add(new FileOutConfig("/template/pageVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "Page" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
 		// 自定义配置会被优先输出
 		focList.add(new FileOutConfig(templatePath) {
 			@Override
@@ -147,9 +112,9 @@ public class CodeGenerator {
 		// 配置自定义输出模板
 		// 指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别
 //         templateConfig.setEntity("templates/entity.java");
-		templateConfig.setController("template/controller.java");
-		templateConfig.setEntity("template/entity.java");
-		templateConfig.setService("template/service.java");
+//		templateConfig.setController("template/controller.java");
+//		templateConfig.setEntity("template/entity.java");
+//		templateConfig.setService("template/service.java");
 		templateConfig.setXml(null);
 		mpg.setTemplate(templateConfig);
 

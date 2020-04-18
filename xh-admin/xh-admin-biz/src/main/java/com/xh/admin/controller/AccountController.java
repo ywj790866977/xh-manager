@@ -25,10 +25,7 @@ public class AccountController {
 	@Resource
 	private AccountServiceImpl accountServiceImpl;
 
-	/**
-	 * 查询所有
-	 * @return 结果集合
-	 */
+
 	@ApiOperation(value = "list",notes = "查询列表")
 	@GetMapping("/v1/list")
 	public List<Account> queryList() {
