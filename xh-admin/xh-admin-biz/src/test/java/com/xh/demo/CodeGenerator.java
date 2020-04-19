@@ -16,7 +16,7 @@ import org.apache.commons.lang3.StringUtils;
 
 // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
 public class CodeGenerator {
-	private static final String path = "D:\\code\\gl\\gl-service\\service-edu" ;
+	private static final String path = "D:\\code\\xh\\xh-manager\\xh-admin\\xh-admin-biz" ;
 	/**
 	 * <p>
 	 * 读取控制台内容
@@ -42,7 +42,7 @@ public class CodeGenerator {
 
 		// 2.全局配置
 		GlobalConfig gc = new GlobalConfig();
-		String projectPath = System.getProperty("user.dir");
+//		String projectPath = System.getProperty("user.dir");
 		gc.setOutputDir(path+ "/src/main/java"); // 生成代码的路径，
 		gc.setAuthor("rubyle");  // 作者信息
 		gc.setOpen(false); // 是否打开资源管理
@@ -55,7 +55,7 @@ public class CodeGenerator {
 		// 3.数据源配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setUrl(
-				"jdbc:mysql://45.76.218.204:3306/xh?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai");
+				"jdbc:mysql://45.76.218.204:3306/gl?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai");
 		// dsc.setSchemaName("public");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
 		dsc.setUsername("root");
@@ -65,8 +65,8 @@ public class CodeGenerator {
 		// 4.包配置
 		PackageConfig pc = new PackageConfig();
 		// com.gl.service
-		pc.setParent("com.gl");
-		pc.setModuleName("service");
+		pc.setParent("com.xh");
+		pc.setModuleName("admin");
 		pc.setEntity("entity");
 		pc.setController("controller");
 		pc.setService("service");
@@ -84,48 +84,12 @@ public class CodeGenerator {
 
 		// 自定义输出配置
 		List<FileOutConfig> focList = new ArrayList<>();
-		focList.add(new FileOutConfig("/template/addVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "Add" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
-		//添加update 请求对象
-		focList.add(new FileOutConfig("/template/updateVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "Update" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
-		//添加list请求对象
-		focList.add(new FileOutConfig("/template/listVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "List" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
-		//添加分页请求对象
-		focList.add(new FileOutConfig("/template/pageVo.java.vm") {
-			@Override
-			public String outputFile(TableInfo tableInfo) {
-				return path + "/src/main/java/com/gl/service/vo/req/" + "Page" + tableInfo
-						.getEntityName() + "Req"
-						+ StringPool.DOT_JAVA;
-			}
-		});
 		// 自定义配置会被优先输出
 		focList.add(new FileOutConfig(templatePath) {
 			@Override
 			public String outputFile(TableInfo tableInfo) {
 				// 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-				return projectPath + "/src/main/resources/mapper/" + pc.getModuleName()
-						+ "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
+				return path + "/src/main/resources/mapper/"  + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
 			}
 		});
 
@@ -147,9 +111,9 @@ public class CodeGenerator {
 		// 配置自定义输出模板
 		// 指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别
 //         templateConfig.setEntity("templates/entity.java");
-		templateConfig.setController("template/controller.java");
-		templateConfig.setEntity("template/entity.java");
-		templateConfig.setService("template/service.java");
+//		templateConfig.setController("template/controller.java");
+//		templateConfig.setEntity("template/entity.java");
+//		templateConfig.setService("template/service.java");
 		templateConfig.setXml(null);
 		mpg.setTemplate(templateConfig);
 
