@@ -17,10 +17,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-webflux</artifactId>
     </dependency>
-    <dependency>
-      <groupId>de.codecentric</groupId>
-      <artifactId>spring-boot-admin-starter-client</artifactId>
-    </dependency>
     <!--  eureka  -->
     <dependency>
       <groupId>org.springframework.cloud</groupId>
@@ -53,6 +49,12 @@
     <dependency>
       <groupId>com.xh.service</groupId>
       <artifactId>xh-service-api</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.xh.common.core</groupId>
+      <artifactId>xh-common-core</artifactId>
       <version>1.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>

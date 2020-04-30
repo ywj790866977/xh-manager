@@ -2,17 +2,13 @@ package com.xh.service.controller;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.xh.core.response.ResponseHelper;
-import com.xh.core.response.ResponseVO;
+import com.xh.common.core.response.ResponseHelper;
+import com.xh.common.core.response.ResponseVO;
 import com.xh.service.entity.EduTeacher;
 import com.xh.service.service.EduTeacherService;
-import com.xh.service.service.impl.EduTeacherServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.models.auth.In;
 import java.util.List;
-import javax.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
