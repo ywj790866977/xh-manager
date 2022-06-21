@@ -21,7 +21,7 @@
     <java.version>1.8</java.version>
     <mybatis.plus.version>3.3.1.tmp</mybatis.plus.version>
     <springboot.version>2.1.9.RELEASE</springboot.version>
-    <mysql.version>8.0.17</mysql.version>
+    <mysql.version>8.0.28</mysql.version>
     <lombok.version>1.18.10</lombok.version>
     <swagger.version>2.9.2</swagger.version>
     <fastjson.version>1.2.47</fastjson.version>
